@@ -37,13 +37,13 @@ public class Tracker {
 
     public Item[] findByName(String key) {
         int size = 0;
-        Item[] ReturnItems = new Item[this.size];
+        Item[] returnItems = new Item[this.size];
         for (int index = 0; index < this.size; index++) {
             if (items[index].getName().equals(key)) {
-                ReturnItems[size++] = items[index];
+                returnItems[size++] = items[index];
             }
         }
-        return Arrays.copyOf(ReturnItems, size);
+        return Arrays.copyOf(returnItems, size);
     }
 
     public boolean replace(int id, Item item) {
